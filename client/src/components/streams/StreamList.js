@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { fetchStreams } from '../../actions';
 
-class StreamList extends React.Commponent {
+class StreamList extends React.Component {
   componentDidMount() {
     this.props.fetchStreams();
   }
@@ -12,6 +12,9 @@ class StreamList extends React.Commponent {
   }
 }
 
+const mapStateToProps = (state) => {
+  console.log(this.props.streams)
+  return { streams: Object.values(state.streams) };
+};
 
-
-export default connect(null, { fetchStreams })(StreamList);
+export default connect(mapStateToProps, { fetchStreams })(StreamList);
