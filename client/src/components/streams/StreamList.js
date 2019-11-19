@@ -13,7 +13,6 @@ class StreamList extends React.Component {
 }
 
 const mapStateToProps = (state) => {
-  console.log(this.props.streams)
   return { streams: Object.values(state.streams) };
 };
 
