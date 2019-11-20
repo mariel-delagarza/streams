@@ -22,6 +22,7 @@ class StreamList extends React.Component {
             {stream.title}
             <div className="description">{stream.description}</div>
           </div>
+          {this.renderAdmin(stream)}
         </div>
       );
     });
