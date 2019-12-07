@@ -2,9 +2,14 @@
   "streams": [
     {
       "title": "I created this Stream",
-      "description": "this was made by me",
+      "description": "this was made by me!!",
       "userId": "101736426428236155514",
       "id": 1
+    },
+    {
+      "title": "Waffle Dog",
+      "description": "Watch Waffles Play!",
+      "id": 2
     }
   ]
 }
