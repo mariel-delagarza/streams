@@ -3,6 +3,12 @@ import Modal from '../Modal';
 import history from '../../history';
 
 class StreamDelete extends React.Component {
+  componentDidMount() {
+    this.props.match.params.id
+  }
+
+
+
   renderActions() {
     return (
       <React.Fragment>
