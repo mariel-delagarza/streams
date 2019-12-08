@@ -1,6 +1,8 @@
 import React from 'react';
+import { connect } from 'react-redux';
 import Modal from '../Modal';
 import history from '../../history';
+import { fetchStream } from '../../actions';
 
 class StreamDelete extends React.Component {
   componentDidMount() {
@@ -33,4 +35,4 @@ class StreamDelete extends React.Component {
 }
 
 
-export default StreamDelete;
+export default connect(null, { fetchStream })(StreamDelete);
