@@ -2,13 +2,18 @@ import React from 'react';
 import Modal from '../Modal';
 import history from '../../history';
 
-const StreamDelete = () => {
+class StreamDelete extends React.Component {
   const actions = (
     <React.Fragment>
       <button className="ui button negative">Delete</button>
       <button className="ui button">Cancel</button>
     </React.Fragment>
   );
+
+  render() {
+    
+  }
+
 
   return (
     <div>
