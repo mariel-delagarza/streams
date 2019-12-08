@@ -6,7 +6,7 @@ import { fetchStream } from '../../actions';
 
 class StreamDelete extends React.Component {
   componentDidMount() {
-    this.props.match.params.id
+    this.props.fetchStream(this.props.match.params.id);
   }
 
 
