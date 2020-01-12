@@ -3,9 +3,14 @@ import flv from 'flv.js';
 import { connect } from 'react-redux';
 import { fetchStream } from '../../actions';
 
-const StreamShow = () => {
-  return <div>StreamShow</div>;
-};
+class StreamShow extends React.Component {
+  constructor(props) {
+    super(props);
 
+    this.videoRef = React.createRef();
+  }
+
+  
+}
 
 export default StreamShow;
